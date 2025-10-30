@@ -157,8 +157,7 @@ cd lab2_EEG_classification
    ```
 
 ---
-
-### Step 3: 安裝相依套件
+安裝相依套件
 
 **方法一：使用 requirements.txt（推薦）**
 
