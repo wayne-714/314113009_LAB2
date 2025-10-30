@@ -139,6 +139,84 @@ lab2_EEG_classification/
     ├── loss_curve.png
     └── confusion_matrix.png
 ```
+---
+下載專案
+
+**方法一：使用 Git（推薦）**
+```bash
+git clone https://github.com/wayne-714/lab2_EEG_classification.git
+cd lab2_EEG_classification
+```
+
+**方法二：直接下載 ZIP**
+1. 點擊 GitHub 頁面的 "Code" → "Download ZIP"
+2. 解壓縮到你的工作目錄
+3. 進入資料夾：
+   ```bash
+   cd lab2_EEG_classification
+   ```
+
+---
+
+### Step 3: 安裝相依套件
+
+**方法一：使用 requirements.txt（推薦）**
+
+```bash
+# 建立虛擬環境（可選但建議）
+python -m venv venv
+
+# 啟動虛擬環境
+# Windows:
+venv\Scripts\activate
+# macOS/Linux:
+source venv/bin/activate
+
+# 安裝所有套件
+pip install -r requirements.txt
+```
+
+**方法二：手動安裝個別套件**
+
+```bash
+# 深度學習框架
+pip install torch>=2.0.0
+
+# 數值計算
+pip install numpy>=1.24.0
+
+# 資料處理
+pip install pandas>=2.0.0
+pip install scikit-learn>=1.3.0
+
+# 視覺化
+pip install matplotlib>=3.7.0
+pip install seaborn>=0.12.0
+
+# 工具
+pip install tqdm>=4.65.0
+```
+
+**安裝 PyTorch（根據你的系統）**：
+
+- **有 CUDA GPU（推薦）**：
+  ```bash
+  # CUDA 11.8
+  pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+  
+  # CUDA 12.1
+  pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+  ```
+
+- **只用 CPU**：
+  ```bash
+  pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+  ```
+
+- **macOS（Apple Silicon）**：
+  ```bash
+  pip install torch torchvision torchaudio
+  ```
 
 ---
 
